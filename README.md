@@ -5,7 +5,7 @@
   * **Homepage:** [leaf.cmu.edu](https://leaf.cmu.edu)
   * **Paper:** ["LEAF: A Benchmark for Federated Settings"](https://arxiv.org/abs/1812.01097)
 
-## Datasets
+## Datasets Added
 
 CIFAR-100
 
