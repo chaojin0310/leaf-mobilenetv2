@@ -48,7 +48,10 @@ MODEL_PARAMS = {
     'celeba.cnn': (0.1, 2), # lr, num_classes
     'synthetic.log_reg': (0.0003, 5, 60), # lr, num_classes, input_dim
     'reddit.stacked_lstm': (0.0003, 10, 256, 2), # lr, seq_len, num_hidden, num_layers
-    'cifar-100.mobileNetV2': (0.001, 100, 1)  # lr, num_classes, width_multiplier
+    'cifar-100.mobileNetV2': (0.01, 100, 1),  # lr, num_classes, width_multiplier
+    'cifar-100.alexnet': (0.01, 100),  # lr, num_classes
+    'cifar-100.squeezenet': (0.04, 100),  # lr, num_classes
+    'cifar-100.googlenet': (0.01, 100),  # lr, num_classes
 }
 """dict: Model specific parameter specification"""
 
