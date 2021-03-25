@@ -2,7 +2,8 @@
 
 ## CIFAR-100 Classifier Instructions
 - Ensure that the ```data/cifar-100/data/train``` and ```data/cifar-100/data/test``` directories contain data
-- Run ```python3 main.py -dataset cifar-100 -model mobileNetV2```
+- Run ```python3 main.py -dataset cifar-100 -model xxx```, xxx in {mobileNetV2, squeezenet, alexnet}
+- Uncomment line 47 ```net = tf.layers.max_pooling2d(net, pool_size=(3, 3), strides=(2, 2), padding='valid', name='pool5')``` in ```cifar-100/alexnet.py``` before resizing and running
 - For more simulation options and details, see 'Additional Notes' section
 
 ## Additional Notes
