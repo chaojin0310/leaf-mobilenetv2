@@ -58,7 +58,7 @@ class ClientModel(Model):
 
         def aux_classifier(inputs, name=''):
             outputs = inputs
-            # outputs = tf.layers.average_pooling2d(outputs, pool_size=(5, 5), strides=(1, 1), name=name + 'pool')
+            outputs = tf.layers.average_pooling2d(outputs, pool_size=(5, 5), strides=(1, 1), name=name + 'pool')
             outputs = conv2d(outputs, 128, 1, 1, name=name + 'conv')
             outputs = tf.layers.flatten(outputs)
             outputs = tf.layers.dense(outputs, 1024, activation='relu', name=name + 'fc1')
